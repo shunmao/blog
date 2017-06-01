@@ -8,7 +8,7 @@ class Article(models.Model):
     def __str__(self):
         return self.title
 
-class Meta:
+    class Meta:
         ordering = ['-pubDateTime']
 
 class Comment(models.Model):
